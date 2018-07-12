@@ -213,7 +213,7 @@ public class MenuPrincipal {
                     int j13 = sc.nextInt();
                     switch (j13) {
                         case 2: {
-                            System.out.println("En matrices R4 estan las sogioentes formulas");
+                            System.out.println("En matrices R4 estan las siguientes formulas");
                             System.out.println("1. Suma");
                             System.out.println("2. Resta");
                             System.out.println("3. Multiplicacion");
@@ -245,10 +245,67 @@ public class MenuPrincipal {
                             }
                         }
                     }
+                    int j14 = sc.nextInt();
+                    switch (j14) {
+                        case 2:
+                            System.out.println("Seleccione una opcion en N");
+                            System.out.println("1. Vectores");
+                            System.out.println("2. Matrices");
+                            int j15 = sc.nextInt();
+                            switch (j15) {
+                                case 2: {
+                                    System.out.println("En vectores N tiene las siguientes opciones");
+                                    System.out.println("1. Suma de Vectores");
+                                    System.out.println("2. Resta de Vectores");
+                                    System.out.println("3. Multiplicacion de Vectores");
+                                    System.out.println("4. Producto Punto");
+                                }
+                                int j16 = sc.nextInt();
+                                switch (j16) {
+                                    case 1: {
+
+                                    }
+                                    case 2: {
+
+                                    }
+                                    case 3: {
+
+                                    }
+                                    case 4: {
+
+                                    }
+                                    break;
+                                }
+                                int j17 = sc.nextInt();
+                                switch (j17) {
+                                    case 2: {
+                                        System.out.println("En matrices N estan las siguientes formulas");
+                                        System.out.println("1. Suma");
+                                        System.out.println("2. Resta");
+                                        System.out.println("3. Multiplicacion");
+                                        System.out.println("4. Escalar * Matriz");
+                                        int j18 = sc.nextInt();
+                                        switch (j18) {
+                                            case 1: {
+
+                                            }
+                                            case 2: {
+
+                                            }
+                                            case 3: {
+
+                                            }
+                                            case 4: {
+
+                                            }
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+
+                    }
             }
-
-        }while (j<5);
+        } while (j < 5) ;
+    }
 }
-}
-
-
