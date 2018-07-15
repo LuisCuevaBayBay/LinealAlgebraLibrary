@@ -39,6 +39,7 @@ public class MatrizN {
             for (int i = 0; i < filas; i++) {
                 for (int j = 0; j < columnas; j++) {
                     matRes[i][j] = mat1[i][j] + mat2[i][j];
+                    System.out.println(matRes[i][j]);
                 }
             }
         } else {
@@ -83,7 +84,7 @@ public class MatrizN {
                 for (int i = 0; i < filas; i++) {
                     for (int j = 0; j < columnas; j++) {
                         matRes[i][j] = mat1[i][j] - mat2[i][j];
-
+                        System.out.println(matRes[i][j]+" ");
                     }
                 }
             } else {

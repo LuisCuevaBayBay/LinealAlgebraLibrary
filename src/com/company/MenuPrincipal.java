@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 public class MenuPrincipal {
 
-    private LectorTeclado lt = new LectorTeclado();
+    public LectorTeclado lt = new LectorTeclado();
 
     public void Menu() {
         int j;
@@ -251,7 +251,7 @@ public class MenuPrincipal {
                     System.out.println("2. Matrices");
                     int j15 = sc.nextInt();
                     switch (j15) {
-                        case 2:
+                        case 1:
                             System.out.println("En vectores N tiene las siguientes opciones");
                             System.out.println("1. Suma de Vectores");
                             System.out.println("2. Resta de Vectores");
@@ -272,9 +272,11 @@ public class MenuPrincipal {
                                     break;
                                 }
                             }
+                            break;
+                    }
                     int j17 = sc.nextInt();
-                    switch (j17){
-                        case 2:
+                    switch (j17) {
+                        case 2: {
                             System.out.println("En matrices N estan las siguientes formulas");
                             System.out.println("1. Suma");
                             System.out.println("2. Resta");
@@ -293,12 +295,11 @@ public class MenuPrincipal {
                                     MatrizN matrizN = new MatrizN();
                                     matrizN.Multiplicacion();
                                 }
-                                break;
                             }
-
+                        }
                     }
-                    }
-                    }
-        } while (j < 5);
+            }
+        }
+        while (j < 5) ;
     }
 }
