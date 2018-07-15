@@ -3,10 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        //MenuPrincipal menuPrincipal = new MenuPrincipal();
-        //menuPrincipal.Menu();
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        menuPrincipal.Menu();
 
-        VectorN vectorN = new VectorN();
-        vectorN.Resta();
     }
 }

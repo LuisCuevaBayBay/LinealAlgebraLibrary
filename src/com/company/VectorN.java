@@ -4,6 +4,7 @@ public class VectorN {
 
     private Scanner teclado;
 
+
     public void Suma() {
         teclado = new Scanner(System.in);
         System.out.print("En que dimension desea trabajar?");
@@ -22,10 +23,9 @@ public class VectorN {
 
                 int[] datosC = new int[cant];
                 datosC[f] = datosA[f] + datosB[f];
-
-                System.out.println("El vector resultado es: " + datosC[f]);
+            System.out.println("El vector es: "+datosC[f]);
             }
-        }
+    }
 
 
     public void Resta() {
@@ -46,7 +46,7 @@ public class VectorN {
         for (int i = 0; i < datosA.length; i++) {
             int[] datosC = new int[cant];
             datosC[i] = datosA[i] - datosB[i];
-            System.out.println("el vector resultado es: "+datosC[i]);
+            System.out.println("El vector es: "+datosC[i]);
         }
     }
     public void Multiplicar(){
@@ -67,10 +67,13 @@ public class VectorN {
         for (int i = 0; i < datosA.length; i++) {
             int[] datosC = new int[cant];
             datosC[i] = datosA[i] * datosB[i];
-            System.out.println("el vector resultado es: "+datosC[i]);
+            System.out.println("El vector es: "+datosC[i]);
         }
     }
-}
+        }
+
+
+
 
 
 
