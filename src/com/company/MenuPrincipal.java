@@ -286,14 +286,17 @@ public class MenuPrincipal {
                                 case 1: {
                                     MatrizN matrizN = new MatrizN();
                                     matrizN.Suma();
+                                    break;
                                 }
                                 case 2: {
                                     MatrizN matrizN = new MatrizN();
                                     matrizN.resta();
+                                    break;
                                 }
                                 case 3: {
                                     MatrizN matrizN = new MatrizN();
                                     matrizN.Multiplicacion();
+                                    break;
                                 }
                             }
                         }
