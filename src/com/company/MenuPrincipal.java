@@ -129,18 +129,22 @@ public class MenuPrincipal {
                                 case 1: {
                                     VectorR3 vectorR3 = new VectorR3();
                                     vectorR3.suma();
+                                    break;
                                 }
                                 case 2: {
                                     VectorR3 vectorR3 = new VectorR3();
                                     vectorR3.resta();
+                                    break;
                                 }
                                 case 3: {
                                     VectorR3 vectorR3 = new VectorR3();
                                     vectorR3.prodpunto();
+                                    break;
                                 }
                                 case 4: {
                                     VectorR3 vectorR3 = new VectorR3();
                                     vectorR3.ProdPorCoeficiente();
+                                    break;
                                 }
                             }
                             break;
@@ -156,18 +160,22 @@ public class MenuPrincipal {
                                 case 1: {
                                     MatrizR3 matrizR3 = new MatrizR3();
                                     matrizR3.SumarMatriz();
+                                    break;
                                 }
                                 case 2: {
                                     MatrizR3 matrizR3 = new MatrizR3();
                                     matrizR3.RestaMatriz();
+                                    break;
                                 }
                                 case 3: {
                                     MatrizR3 matrizR3 = new MatrizR3();
                                     matrizR3.multiplicar();
+                                    break;
                                 }
                                 case 4: {
                                     MatrizR3 matrizR3 = new MatrizR3();
                                     matrizR3.matrizXescalar();
+                                    break;
                                 }
                                 case 5: {
                                     MatrizR3 matrizR3 = new MatrizR3();
@@ -194,18 +202,22 @@ public class MenuPrincipal {
                                 case 1: {
                                     VectorR4 vectorR4 = new VectorR4();
                                     vectorR4.suma();
+                                    break;
                                 }
                                 case 2: {
                                     VectorR4 vectorR4 = new VectorR4();
                                     vectorR4.resta();
+                                    break;
                                 }
                                 case 3: {
                                     VectorR4 vectorR4 = new VectorR4();
                                     vectorR4.ProdPunto();
+                                    break;
                                 }
                                 case 4: {
                                     VectorR4 vectorR4 = new VectorR4();
                                     vectorR4.ProdPorCoeficiente();
+                                    break;
                                 }
                             }
                             break;
@@ -224,18 +236,22 @@ public class MenuPrincipal {
                                 case 1: {
                                     MatrizR4 matrizR4 = new MatrizR4();
                                     matrizR4.suma();
+                                    break;
                                 }
                                 case 2: {
                                     MatrizR4 matrizR4 = new MatrizR4();
                                     matrizR4.resta();
+                                    break;
                                 }
                                 case 3: {
                                     MatrizR4 matrizR4 = new MatrizR4();
                                     matrizR4.multiplicacion();
+                                    break;
                                 }
                                 case 4: {
                                     MatrizR4 matrizR4 = new MatrizR4();
                                     matrizR4.EscalarXMatriz();
+                                    break;
                                 }
                                 case 5: {
                                     MatrizR4 matrizR4 = new MatrizR4();
@@ -261,10 +277,12 @@ public class MenuPrincipal {
                                 case 1: {
                                     VectorN vectorN = new VectorN();
                                     vectorN.Suma();
+                                    break;
                                 }
                                 case 2: {
                                     VectorN vectorN = new VectorN();
                                     vectorN.Resta();
+                                    break;
                                 }
                                 case 3: {
                                     VectorN vectorN = new VectorN();
