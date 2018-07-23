@@ -214,28 +214,26 @@ public class MatrizR3 {
         System.out.println("La Matriz Rotacion de Z:");
         System.out.println("|"+ARz+" "+BRz+" "+CRz+"|");
     }
+    public void VecXMat(){
+        int x = lt.leerEntero("Ingrese el valor 'x' del vector A","Intente de nuevo");
+        int y = lt.leerEntero("Ingrese el valor 'y' del vector A","Intente de nuevo");
+        int z = lt.leerEntero("ingrese el valor z del vector A","Intente de nuevo");
 
-    public int getA() {
-        return a;
-    }
+        int a1 = lt.leerEntero("Ingrese el valor A1 de la matriz","Intente de nuevo");
+        int a2 = lt.leerEntero("Ingrese el valor A2 de la Matriz","intente de nuevo ");
+        int a3 = lt.leerEntero("Ingrese el valor A3 de la matriz","intente de nuevo");
+        int a4 = lt.leerEntero("Ingrese el valor A4 de la matriz","Intente de nuevo ");
+        int a5 = lt.leerEntero("Favor ingresar el numero a5","ingrese un entero");
+        int a6 = lt.leerEntero("Favor ingresar el numero a6","ingrese un entero");
+        int a7 = lt.leerEntero("Favor ingresar el numero a7","ingrese un entero");
+        int a8 = lt.leerEntero("Favor ingresar el numero a8","ingrese un entero");
+        int a9 = lt.leerEntero("Favor ingresar el numero a9","ingrese un entero");
 
-    public void setA(int a) {
-        this.a = a;
-    }
+        int total1= x*a1 + y*a2 +z*a3;
+        int total2 = x*a4 + y*a5 +z*a6;
+        int total3 = x*a7 + y*a8 + z*a9;
 
-    public int getB() {
-        return b;
-    }
-
-    public void setB(int b) {
-        this.b = b;
-    }
-
-    public int getC() {
-        return c;
-    }
-
-    public void setC(int c) {
-        this.c = c;
+        int total = total1+total2+total3;
+        System.out.println("El total es: "+total);
     }
 }

@@ -18,15 +18,14 @@ public class MenuPrincipal {
             System.out.println("\t 3. R4");
             System.out.println("\t 4. dimension N");
             System.out.println("\t 5. Salir del programa");
-
-            j = sc.nextInt();
+            j = lt.leerEntero("Favor ingrese una opcion","Intente de nuevo");
             switch (j) {
                 case 1:
                     System.out.println("Bienvenido a la opcion R2");
                     System.out.println("\t 1. Vectores");
                     System.out.println("\t 2. Matrices");
 
-                    int j2 = sc.nextInt();
+                    int j2 = lt.leerEntero("Ingrese una opcion valida","Intente de nuevo");
                     switch (j) {
                         case 1:
                             System.out.println("Escoja una de las siguientes opciones");
@@ -34,11 +33,10 @@ public class MenuPrincipal {
                             System.out.println("2. Resta de vectores");
                             System.out.println("3. Producto Punto");
                             System.out.println("4. Producto Por Coeficiente");
-                            System.out.println("5. Producto Cruz");
-                            System.out.println("6. Vector por matriz");
+                            System.out.println("5. Vector por matriz");
                             System.out.println("");
                             System.out.println("");
-                            int j3 = sc.nextInt();
+                            int j3 = lt.leerEntero("Ingrese una opcion valida","Intente de nuevo");
                             switch (j3) {
                                 case 1: {
                                     VectorR2 vectorR2 = new VectorR2();
@@ -62,18 +60,12 @@ public class MenuPrincipal {
                                 }
                                 case 5: {
                                     VectorR2 vectorR2 = new VectorR2();
-                                    vectorR2.ProdCruz();
-                                    break;
-                                }
-                                case 6: {
-                                    VectorR2 vectorR2 = new VectorR2();
                                     vectorR2.VecXMat();
                                     break;
                                 }
                             }
-                            break;
                     }
-                    int j5 = sc.nextInt();
+                    int j5 = lt.leerEntero("Ingrese una opcion valida","Intente de nuevo");
                     switch (j5) {
                         case 1:
                             System.out.println("Las opciones de matrices R2 son: ");
@@ -83,7 +75,7 @@ public class MenuPrincipal {
                             System.out.println("4. Matriz por Escalar");
                             System.out.println("5. Matriz Rotacion");
                     }
-                    int j6 = sc.nextInt();
+                    int j6 = lt.leerEntero("Ingrese una opcion valida","Intente de nuevo");
                     switch (j6) {
                         case 1: {
                             MatrizR2 matrizR2 = new MatrizR2();
@@ -110,13 +102,11 @@ public class MenuPrincipal {
                             break;
                         }
                     }
-                    break;
-
                 case 2:
                     System.out.println("Seleccione una Opcion en R3");
                     System.out.println("1. Vectores");
                     System.out.println("2. Matrices");
-                    int j7 = sc.nextInt();
+                    int j7 = lt.leerEntero("Ingrese una opcion valida","intente de nuevo");
                     switch (j7) {
                         case 1:
                             System.out.println("En vectores R3 tiene las siguientes formulas disponibles");
@@ -124,6 +114,7 @@ public class MenuPrincipal {
                             System.out.println("2. Resta de vectores");
                             System.out.println("3. Producto Punto");
                             System.out.println("4. Producto por Coeficiente");
+
                             int j8 = sc.nextInt();
                             switch (j8) {
                                 case 1: {
@@ -147,15 +138,15 @@ public class MenuPrincipal {
                                     break;
                                 }
                             }
-                            break;
                         case 2:
                             System.out.println("En Matriz R3 tiene las siguientes opciones");
                             System.out.println("1. Suma de Matrices");
                             System.out.println("2. Resta de Matrices");
                             System.out.println("3. Multiplicar Matrices");
-                            System.out.println("4. Matriz * Escalar");
+                            System.out.println("4. Vector Por Matriz");
                             System.out.println("5. Matriz Rotacion");
-                            int j10 = sc.nextInt();
+                            System.out.println("5. Producto Punto");
+                            int j10 = lt.leerEntero("Ingrese una opcion valida","intente de nuevo");
                             switch (j10) {
                                 case 1: {
                                     MatrizR3 matrizR3 = new MatrizR3();
@@ -174,7 +165,7 @@ public class MenuPrincipal {
                                 }
                                 case 4: {
                                     MatrizR3 matrizR3 = new MatrizR3();
-                                    matrizR3.matrizXescalar();
+                                    matrizR3.VecXMat();
                                     break;
                                 }
                                 case 5: {
@@ -182,14 +173,17 @@ public class MenuPrincipal {
                                     matrizR3.MatrizRotacion();
                                     break;
                                 }
+                                case 6:{
+                                    VectorR2 vectorR2 = new VectorR2();
+                                    vectorR2.ProdPunto();
+                                }
                             }
-                            break;
                     }
                 case 3:
                     System.out.println("Seleccione una opcion en R4");
                     System.out.println("1. Vectores");
                     System.out.println("2. Matriz");
-                    int j11 = sc.nextInt();
+                    int j11 = lt.leerEntero("Ingrese una opcion valida","Intente de nuevo");
                     switch (j11) {
                         case 2:
                             System.out.println("En vectores R4 tiene las siguientes opciones");
@@ -220,7 +214,6 @@ public class MenuPrincipal {
                                     break;
                                 }
                             }
-                            break;
                     }
                     int j13 = sc.nextInt();
                     switch (j13) {
@@ -231,7 +224,7 @@ public class MenuPrincipal {
                             System.out.println("3. Multiplicacion");
                             System.out.println("4. Escalar * Matriz");
                             System.out.println("5. Matriz Rotacion");
-                            int j14 = sc.nextInt();
+                            int j14 = lt.leerEntero("Ingrese una opcion valida","intente de nuevo");
                             switch (j14) {
                                 case 1: {
                                     MatrizR4 matrizR4 = new MatrizR4();
@@ -265,14 +258,17 @@ public class MenuPrincipal {
                     System.out.println("Seleccione una opcion en N");
                     System.out.println("1. Vectores");
                     System.out.println("2. Matrices");
-                    int j15 = sc.nextInt();
+                    int j15 = lt.leerEntero("ingrese una opcion valida","intente de nuevo");
                     switch (j15) {
                         case 1:
                             System.out.println("En vectores N tiene las siguientes opciones");
                             System.out.println("1. Suma de Vectores");
                             System.out.println("2. Resta de Vectores");
                             System.out.println("3. Multiplicacion de Vectores");
-                            int j16 = sc.nextInt();
+                            System.out.println("4. Magnitud de Vector");
+                            System.out.println("5. Vector Unitario");
+                            System.out.println("6. Producto Cruz");
+                            int j16 = lt.leerEntero("Ingrese una opcion valida","Intente de nuevo");
                             switch (j16) {
                                 case 1: {
                                     VectorN vectorN = new VectorN();
@@ -289,10 +285,21 @@ public class MenuPrincipal {
                                     vectorN.Multiplicar();
                                     break;
                                 }
+                                case 4: {
+                                    VectorN vectorN = new VectorN();
+                                    vectorN.Magnitud();
+                                }
+                                case 5: {
+                                    VectorN vectorN = new VectorN();
+                                    vectorN.Unitario();
+                                }
+                                case 6:{
+                                    VectorN vectorN = new VectorN();
+                                    vectorN.ProdCruz();
+                                }
                             }
-                            break;
                     }
-                    int j17 = sc.nextInt();
+                    int j17 = lt.leerEntero("ingrese una opcion valida","intente de nuevo");
                     switch (j17) {
                         case 2: {
                             System.out.println("En matrices N estan las siguientes formulas");
@@ -316,6 +323,7 @@ public class MenuPrincipal {
                                     matrizN.Multiplicacion();
                                     break;
                                 }
+
                             }
                         }
                     }
